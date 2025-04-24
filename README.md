@@ -1,19 +1,19 @@
 # AI & ML Internship - Task 1
 ## Data Cleaning & Preprocessing using Titanic Dataset
 
-### 🎯 Objective
+### Objective
 Learn how to clean and prepare raw data for machine learning by handling missing values, encoding categorical variables, standardizing features, and removing outliers.
 
 ---
 
-### 📦 Dataset
+### Dataset
 - **Name:** Titanic Dataset
 - **Source:** [Click here to download](https://www.kaggle.com/datasets/brendan45774/titanic)
 - **File used:** `titanic.csv`
 
 ---
 
-### 🛠 Tools & Libraries Used
+###  Tools & Libraries Used
 - Python
 - Pandas
 - NumPy
@@ -23,7 +23,7 @@ Learn how to clean and prepare raw data for machine learning by handling missing
 
 ---
 
-### 🧪 Steps Performed
+###  Steps Performed
 
 #### 1. Importing and Exploring Dataset
 - Loaded Titanic dataset and checked data types, null values, and general info using `df.info()` and `df.head()`.
@@ -46,12 +46,12 @@ Learn how to clean and prepare raw data for machine learning by handling missing
 
 ---
 
-### 📊 Visualizations
+###  Visualizations
 - Boxplots before and after removing outliers to understand data distribution and extreme values.
 
 ---
 
-### ✅ Final Results
+###  Final Results
 - Cleaned Dataset Shape: `(741, 10)` *(after dropping outliers and cleaning)*
 - No null values remain.
 - Categorical features are encoded.
@@ -59,7 +59,7 @@ Learn how to clean and prepare raw data for machine learning by handling missing
 
 ---
 
-### 💡 What I Learned
+###  What I Learned
 - Difference between **mean, mode imputation** and when to apply each.
 - How to handle **categorical variables** with **Label Encoding** and **One-Hot Encoding**.
 - Difference between **Normalization vs Standardization**.
@@ -68,6 +68,6 @@ Learn how to clean and prepare raw data for machine learning by handling missing
 
 ---
 
-### 👨‍💻 Author
+### Author
 **Yug Thummar**  
 AI & ML Internship Participant  
