@@ -1,5 +1,4 @@
-# AI & ML Internship - Task 1
-## Data Cleaning & Preprocessing using Titanic Dataset
+# AI & ML Internship - Task 1 Data Cleaning & Preprocessing using Titanic Dataset
 
 ### Objective
 Learn how to clean and prepare raw data for machine learning by handling missing values, encoding categorical variables, standardizing features, and removing outliers.
