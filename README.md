@@ -49,73 +49,65 @@ Learn how to clean and prepare raw data for machine learning by handling missing
 - Boxplots before and after removing outliers to understand data distribution and extreme values.
 
 ---
-
-###  Final Results
-- Cleaned Dataset Shape: `(741, 10)` *(after dropping outliers and cleaning)*
-- No null values remain.
-- Categorical features are encoded.
-- Numerical features are standardized and outliers are handled.
-
----
-
-###  What I Learned
-- Difference between **mean, mode imputation** and when to apply each.
-- How to handle **categorical variables** with **Label Encoding** and **One-Hot Encoding**.
-- Difference between **Normalization vs Standardization**.
-- How to use **IQR** for outlier detection.
-- Importance of **data preprocessing** in improving ML model performance.
-
----
-
-# AI & ML Internship – Task 2: Exploratory Data Analysis (EDA)
+# AI & ML Internship - Task 2: Exploratory Data Analysis (EDA)
 
 ## Objective
-Perform Exploratory Data Analysis (EDA) using statistical summaries and visualizations to understand the dataset and identify patterns or anomalies.
+Perform Exploratory Data Analysis (EDA) to understand the dataset using statistical summaries and visualizations.
 
-## Dataset Overview
-- **Dataset**: Iris Flower Dataset  
-- **Source**: Loaded using Seaborn library  
-- **Features**:  
-  - sepal_length  
-  - sepal_width  
-  - petal_length  
-  - petal_width  
-  - species (target variable)
+## Dataset
+- **Name**: Iris Flower Dataset
+- **Source**: Preloaded via Seaborn library
+- **Features**: 
+  - `sepal_length`, `sepal_width`, `petal_length`, `petal_width`, `species`
 
-## Tools and Libraries Used
-- Python 3.8  
-- Pandas  
-- Matplotlib  
-- Seaborn  
+## Tools Used
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
 - Plotly (optional)
 
-## EDA Process and Analysis
+## What I Did
 
-### 1. Dataset Loading
-- Loaded the Iris dataset using `sns.load_dataset('iris')`.
+1. **Loaded the dataset** using `seaborn.load_dataset("iris")`
+2. **Generated Summary Statistics** using `.describe()` and `.info()`
+3. **Visualized Distributions**:
+   - Histograms
+   - Boxplots
+   - Violin plots
+   - Swarm plots
+   - KDE (Density plots)
+4. **Explored Relationships**:
+   - Pairplot for feature interactions
+   - Correlation matrix for numeric features
+   - Line fit plots using `lmplot`
+5. **Species-wise Correlation Heatmaps**:
+   - Created separate heatmaps for each species to analyze internal feature correlation
+6. **Feature Engineering**:
+   - Introduced a new feature: `petal_area = petal_length * petal_width`
+7. **Outlier Detection** using the IQR method
 
-### 2. Summary Statistics
-- Used `.describe()` and `.info()` to view data types, missing values, and statistical summaries.
-- Confirmed that there are no missing or null values in the dataset.
+## Inferences
 
-### 3. Visualizations
-- Created the following plots:
-  - Histograms to view distributions of each numerical feature
-  - Boxplots to identify outliers and understand feature spread
-  - Pairplot to explore relationships between features by species
-  - Correlation heatmap to identify highly correlated features
+- **Petal-based features** are most important in separating species.
+- **Setosa** is clearly distinguishable from others.
+- **Versicolor** and **Virginica** show partial overlap in feature space.
+- **Petal length and width** have strong correlation, especially in Virginica.
+- **Setosa** has weak correlation among features, unlike the other two classes.
+- No missing values or major anomalies found in the dataset.
 
-### 4. Key Insights
-- Petal length and petal width are highly positively correlated.
-- Setosa species is clearly separable from the others in the dataset.
-- Sepal width shows more variability compared to other features.
-- Classes are balanced with 50 instances each.
+## Files in this Repository
+
+- `iris_eda.ipynb`: EDA notebook with all code and analysis
+- `README.md`: This file
 
 ## Learning Outcomes
-- Learned how to generate summary statistics and interpret them.
-- Understood how to use visualizations to analyze and compare features.
-- Practiced identifying patterns, trends, and feature relationships that could help in model building.
-  
+
+- Understood how to interpret data using visual and statistical methods.
+- Gained insight into feature relationships and data patterns.
+- Learned how to break down data by class for deeper EDA.
+- Practiced multiple visualization tools like heatmaps, KDE, and violin plots.
+
 ## Author
 Yug Thummar  
 AI & ML Internship Participant  
