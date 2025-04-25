@@ -68,6 +68,56 @@ Learn how to clean and prepare raw data for machine learning by handling missing
 
 ---
 
-### Author
-**Yug Thummar**  
+# AI & ML Internship – Task 2: Exploratory Data Analysis (EDA)
+
+## Objective
+Perform Exploratory Data Analysis (EDA) using statistical summaries and visualizations to understand the dataset and identify patterns or anomalies.
+
+## Dataset Overview
+- **Dataset**: Iris Flower Dataset  
+- **Source**: Loaded using Seaborn library  
+- **Features**:  
+  - sepal_length  
+  - sepal_width  
+  - petal_length  
+  - petal_width  
+  - species (target variable)
+
+## Tools and Libraries Used
+- Python 3.8  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+- Plotly (optional)
+
+## EDA Process and Analysis
+
+### 1. Dataset Loading
+- Loaded the Iris dataset using `sns.load_dataset('iris')`.
+
+### 2. Summary Statistics
+- Used `.describe()` and `.info()` to view data types, missing values, and statistical summaries.
+- Confirmed that there are no missing or null values in the dataset.
+
+### 3. Visualizations
+- Created the following plots:
+  - Histograms to view distributions of each numerical feature
+  - Boxplots to identify outliers and understand feature spread
+  - Pairplot to explore relationships between features by species
+  - Correlation heatmap to identify highly correlated features
+
+### 4. Key Insights
+- Petal length and petal width are highly positively correlated.
+- Setosa species is clearly separable from the others in the dataset.
+- Sepal width shows more variability compared to other features.
+- Classes are balanced with 50 instances each.
+
+## Learning Outcomes
+- Learned how to generate summary statistics and interpret them.
+- Understood how to use visualizations to analyze and compare features.
+- Practiced identifying patterns, trends, and feature relationships that could help in model building.
+  
+## Author
+Yug Thummar  
 AI & ML Internship Participant  
+
