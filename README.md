@@ -96,10 +96,6 @@ Perform Exploratory Data Analysis (EDA) to understand the dataset using statisti
 - **Setosa** has weak correlation among features, unlike the other two classes.
 - No missing values or major anomalies found in the dataset.
 
-## Files in this Repository
-
-- `iris_eda.ipynb`: EDA notebook with all code and analysis
-- `README.md`: This file
 
 ## Learning Outcomes
 
